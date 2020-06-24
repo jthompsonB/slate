@@ -3,7 +3,7 @@
 title: Yellow Dog Fetch API 
 
 language_tabs: 
-   - shell 
+   - json 
 
 toc_footers: 
    - <a href='#'>Sign Up for a Developer Key</a> 
@@ -21,11 +21,9 @@ search: true
 This is the fetch api for 3rd Party integrations to Yellow Dog Inventory. For authentication documentation and examples go to https://yellowdogsoftware.github.io/fetch-api. 
 
 **Version:** v0.33.0 
-
-# /API/V{APIVERSION}/ACCOUNTING/{STOREID}/{DATE}/RETURNTOVENDORS
-## ***GET*** 
-
-**Summary:** Returns a listing of Return to Vendors based on store
+# Accounting
+## Return to Vendor by Store
+**Summary:** Return a listing of Return to Vendors based on store
 
 ### HTTP Request 
 `***GET*** /api/v{apiVersion}/accounting/{storeId}/{date}/returnToVendors` 
@@ -44,11 +42,7 @@ This is the fetch api for 3rd Party integrations to Yellow Dog Inventory. For au
 | ---- | ----------- |
 | 200 | Success |
 
-# /API/V{APIVERSION}/ACCOUNTING/{STOREID}/{DATE}/INVOICES
-## ***GET*** 
-
-**Summary:** 
-
+## Invoice by Store
 ### HTTP Request 
 `***GET*** /api/v{apiVersion}/accounting/{storeId}/{date}/invoices` 
 
@@ -68,12 +62,12 @@ This is the fetch api for 3rd Party integrations to Yellow Dog Inventory. For au
 | ---- | ----------- |
 | 200 | Success |
 
-# /API/V{APIVERSION}/ACCOUNTING/{STOREID}/{DATE}/REVENUE
-## ***GET*** 
+## Revenue by Store
+
 
 **Summary:** 
 
-### HTTP Request 
+#### HTTP Request 
 `***GET*** /api/v{apiVersion}/accounting/{storeId}/{date}/revenue` 
 
 **Parameters**
@@ -91,8 +85,8 @@ This is the fetch api for 3rd Party integrations to Yellow Dog Inventory. For au
 | ---- | ----------- |
 | 200 | Success |
 
-# /API/V{APIVERSION}/ACCOUNTING/{STOREID}/{DATE}/JOURNALENTRY
-## ***GET*** 
+## Journal Entry by Store
+
 
 **Summary:** 
 
@@ -114,8 +108,8 @@ This is the fetch api for 3rd Party integrations to Yellow Dog Inventory. For au
 | ---- | ----------- |
 | 200 | Success |
 
-# /API/V{APIVERSION}/ACCOUNTING/{STOREID}/CODES/{CODETYPE}
-## ***GET*** 
+## Code Type by Store
+
 
 **Summary:** Gets a listing of accounts and their code data
 
