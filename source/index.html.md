@@ -3,7 +3,7 @@
 title: Swagger Petstore 
 
 language_tabs: 
-   - shell 
+   - json 
 
 toc_footers: 
    - <a href='#'>Sign Up for a Developer Key</a> 
@@ -20,9 +20,19 @@ search: true
 
 This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters. 
 
+<<<<<<< HEAD
+**Version:** v0.33.0 
+# Accounting
+## Return to Vendor by Store
+**Summary:** Return a listing of Return to Vendors based on store
+
+### HTTP Request 
+`***GET*** /api/v{apiVersion}/accounting/{storeId}/{date}/returnToVendors` 
+=======
 **Version:** 1.0.0 
 
 [Find out more about Swagger](http://swagger.io) 
+>>>>>>> master
 
 # Authentication 
 
@@ -35,10 +45,14 @@ This is a sample server Petstore server.  You can find out more about     Swagge
 # /PET
 ## ***POST*** 
 
+<<<<<<< HEAD
+## Invoice by Store
+=======
 **Summary:** Add a new pet to the store
 
 **Description:** 
 
+>>>>>>> master
 ### HTTP Request 
 `***POST*** /pet` 
 
@@ -52,11 +66,39 @@ This is a sample server Petstore server.  You can find out more about     Swagge
 
 | Code | Description |
 | ---- | ----------- |
+<<<<<<< HEAD
+| 200 | Success |
+
+## Revenue by Store
+
+
+**Summary:** 
+
+#### HTTP Request 
+`***GET*** /api/v{apiVersion}/accounting/{storeId}/{date}/revenue` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| storeId | path | Id of the store that is being fetched | Yes |  |
+| date | path | Date String in the local time of the database server | Yes |  |
+| types | query | Choose one or more of the following Journal Entry types (Sale, Tax, Tender) | No |  |
+| apiVersion | path |  | Yes |  |
+
+**Responses**
+=======
 | 405 | Invalid input |
+>>>>>>> master
 
 ## ***PUT*** 
 
+<<<<<<< HEAD
+## Journal Entry by Store
+
+=======
 **Summary:** Update an existing pet
+>>>>>>> master
 
 **Description:** 
 
@@ -77,8 +119,13 @@ This is a sample server Petstore server.  You can find out more about     Swagge
 | 404 | Pet not found |
 | 405 | Validation exception |
 
+<<<<<<< HEAD
+## Code Type by Store
+
+=======
 # /PET/FINDBYSTATUS
 ## ***GET*** 
+>>>>>>> master
 
 **Summary:** Finds Pets by status
 
